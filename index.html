@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>Quiz</title>
+</head>
+<body>
+    
+    <div class="show-quiz">
+
+        <div class="quiz-numbers">
+            <h3>Question <span class="question-value">1</span> of <span class="total"></span></h3>
+        </div>
+
+        <div class="quiz-questions">
+        </div>
+
+        <div class="quiz-options">
+            <div id="0" class="option1" onclick="check(this)"></div>
+            <div id="1" class="option2" onclick="check(this)"></div>
+            <div id="2" class="option3" onclick="check(this)"></div>
+            <div id="3" class="option4" onclick="check(this)"></div>
+        </div>
+
+        <div class="quiz-button">
+            <button type="button" class="btn" onclick="next()">Next</button>
+        </div>
+
+        <div class="quiz-answer">
+        </div>
+        
+        <div class="quiz-over">
+            <div class="box">
+                <h1>
+                    Game Over!!<br/>
+                    Your score is <span class="correct-answers"></span> out of <span class="total-questions2"></span> answers correct! <br/>
+                </h1>
+                <button type="button" onclick="tryAgain()">Try Again</button>
+            </div>
+        </div>>
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
